@@ -1,2 +1,2 @@
 # RoboCode
-De code de robot aan te sturen de GUI is in Csharp
+De code om de robot aan te sturen. De GUI is geschreven in C#. Het arduino Gedeelte in C++
