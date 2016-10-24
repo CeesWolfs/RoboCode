@@ -1,7 +1,6 @@
 #include <Servo.h> 
  
-Servo servos[6];  // create servo object to control a servo 
-                // twelve servo objects can be created on most boards
+Servo servos[6];  // maak zes servos
 char command;  
 
  
@@ -20,11 +19,9 @@ void loop()
 { 
   if (Serial.available() > 1) {
     command = Serial.read();
-    digitalWrite(13, 1);
     if ( 0 <= command <= 5 ) {
       servos[command].write(Serial.read()); 
     }
   }
-  digitalWrite(13, 0);
   delay(5);
 } 
